@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: arial, helvetica;
+}
+
+div.upperContent{
+	padding: 20px;
+}
+
+div.lowerContent > div {
+	padding:20px;
+}
+
+@media only screen and (min-width:768px){
+	div.lowerContent > div {
+		width: 50%;
+		float: left;
+	}
+	div.container{
+    max-width: 1100px;
+    margin:0 auto;
+	}
+}

@@ -1,0 +1,69 @@
+/*
+@font-face{
+	font-family: 'acknowledgementmedium';
+	src: url('acknowledgement.woff2') format('woff2'),
+		 url('acknowledgement.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+
+/* font family */
+body{
+	font-family: Arial, Helvetica, serif;
+}
+
+h2{
+/*	font-family: 'acknowledgementmedium',Verdana, Geneva, sans-serif;
+	font-size: 30px;
+	font-size: 3rem;
+	font-size: 4em;
+	font-style: italic;
+	text-transform: uppercase; */
+	font: italic small-caps normal 30px/30px Verdana;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+h3{
+	font-family: 'Times New Roman', serif;
+	font-size: 22px;
+	font-variant: small-caps;
+}
+
+p{
+	font-family: Geneva, Helvetica, sans-serif;
+	font-size: 18px;
+	text-transform: capitalize;
+	line-height: 30px;
+	text-align: justify;
+}
+#listado-cursos li {
+	text-transform: lowercase;
+}
+#listado-cursos li em{
+	font-style: normal;
+}
+
+div.noticia p{
+	text-indent: 100px;
+}
+
+a{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+section#introduccion p{
+	font-variant: small-caps;
+}
+
+section#introduccion p span{
+	font-style: italic;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+p.oferta span{
+	text-decoration: line-through;
+}

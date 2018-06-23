@@ -1,0 +1,166 @@
+/* Background */
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+body{
+	background: gray;
+}
+
+div.contenedor{
+	background: white;
+	width: 1000px;
+/*	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto; */
+	margin: 140px auto 0 auto;
+	padding-bottom: 100px;
+}
+
+header{
+	background: orange;
+/*	height: 100vh;
+	width: 100vw; 
+	margin-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px; */
+	margin: 0 0 30px 0;
+	padding: 20px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+h2{
+	margin: 0 0 40px 0;
+}
+
+nav{
+	background: purple;
+	margin-top: 40px;
+	padding: 20px 0;
+}
+
+nav ul{
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li{
+	float: left;
+	margin-right: 20px;
+}
+
+nav ul li a{
+	color: white;
+	
+}
+
+img.logocss{
+	width: 100px;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content:'';
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+section#introduccion{
+	display: none;
+	display: block;
+	background: yellow;
+	padding: 80px;
+	background-image: url(../images/css3.png), url(../images/html5.png);
+	background-repeat: no-repeat;
+	background-size: 80px, 80px;
+	background-position: 400px 50px, 490px 50px;
+}
+
+section#cursos{
+	display: none;
+	display: block;
+	background: orange;
+	border: 30px double white;
+}
+
+main{
+	width: 700px;
+	float: left;
+}
+
+.gran-promocion{
+	display: table;
+	width: 100%;
+	background-color: yellow;
+	height: 300px;
+}
+
+.texto-promocion{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+h3{
+	background-color: yellow;
+	display: inline-block;
+	width: 50%;
+}
+
+.red{
+	background-color: red;
+}
+
+.blue{
+	background-color: blue;
+}
+
+div.parent{
+	width: 400px;
+	height: 400px;
+	position: relative;
+/*	border-top-left-radius: 20px;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 20px;
+	border-radius: 1px 20px 30px 100px; */
+}
+
+div.child{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 100px;
+	bottom: -100px;
+	border-radius: 50%;
+}
+
+aside{
+	width: 300px;
+	float: right;
+}
+
+table{
+	background: cyan;
+	width: 50%;
+	margin-left: 20%;
+}
+
+tbody tr td {
+	padding: 5px 0;
+}
+
+footer{
+	background: orange;
+	margin-top: 30px;
+	padding-top: 40px;
+}
+
+footer nav{
+	background: transparent;
+}
