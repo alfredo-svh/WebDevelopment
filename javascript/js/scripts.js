@@ -1,3 +1,18 @@
+
+//DOM
+
+var total, num1, num2;
+
+function totalPay(num1, num2){
+	total = num1*num2;
+	return total;
+}
+
+var grandTotal = totalPay(10,20);
+var calculator = document.getElementById('result').innerHTML = grandTotal + " Dollars";
+
+
+/*
 // functions with return values
 
 var num1;
