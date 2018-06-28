@@ -14,6 +14,7 @@
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="css/lightbox.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
@@ -59,10 +60,10 @@
 				</div>
 				
 				<nav class="mainNavigation">
-					<a href="#">Conference</a>
+					<a href="conference.html">Conference</a>
 					<a href="#">Calendar</a>
 					<a href="#">Guest speakers</a>
-					<a href="#">Reservations</a>
+					<a href="register.html">Reservations</a>
 				</nav>
 			
 			</div> <!--.container-->
@@ -89,9 +90,9 @@
 					<div class="eventSchedule">
 						<h2>Event Schedule</h2>
 						<nav class="scheduleMenu">
-							<a href="workshops"><i class="fas fa-code" aria-hidden="true"></i> Workshops</a>
-							<a href="conferences"><i class="fas fa-comment" aria-hidden="true"></i> Conferences</a>
-							<a href="seminars"><i class="fas fa-university" aria-hidden="true"></i> Seminars</a>
+							<a href="#workshops"><i class="fas fa-code" aria-hidden="true"></i> Workshops</a>
+							<a href="#conferences"><i class="fas fa-comment" aria-hidden="true"></i> Conferences</a>
+							<a href="#seminars"><i class="fas fa-university" aria-hidden="true"></i> Seminars</a>
 						</nav>
 						
 						<div id="workshops" class="courseInfo hide clearfix">
@@ -110,6 +111,40 @@
 							</div>
 							<a href="#" class="button float-right">See all</a>
 						</div> <!--#workshops-->
+
+						<div id="conferences" class="courseInfo hide clearfix">
+							<div class="eventDetail">
+								<h3>How to be a freelancer</h3>
+								<p><i class="far fa-clock" aria-hidden="true"></i> 10:00 AM</p>
+								<p><i class="fa fa-calendar-alt" aria-hidden="true"></i> Dec 10th</p>
+								<p><i class="fa fa-user" aria-hidden="true"></i> Gregorio Sanchez</p>
+							</div>
+							
+							<div class="eventDetail">
+								<h3>Technologies of the Future</h3>
+								<p><i class="far fa-clock" aria-hidden="true"></i> 5:00 PM</p>
+								<p><i class="fa fa-calendar-alt" aria-hidden="true"></i> Dec 10th</p>
+								<p><i class="fa fa-user" aria-hidden="true"></i> Susan Sanchez</p>
+							</div>
+							<a href="#" class="button float-right">See all</a>
+						</div> <!--#conferences-->
+
+						<div id="seminars" class="courseInfo hide clearfix">
+							<div class="eventDetail">
+								<h3>UI/UX Design for mobile</h3>
+								<p><i class="far fa-clock" aria-hidden="true"></i> 5:00 PM</p>
+								<p><i class="fa fa-calendar-alt" aria-hidden="true"></i> Dec 11th</p>
+								<p><i class="fa fa-user" aria-hidden="true"></i> Harold Garcia</p>
+							</div>
+							
+							<div class="eventDetail">
+								<h3>Learn to code in a morning</h3>
+								<p><i class="far fa-clock" aria-hidden="true"></i> 10:00 AM</p>
+								<p><i class="fa fa-calendar-alt" aria-hidden="true"></i> Dec 11th</p>
+								<p><i class="fa fa-user" aria-hidden="true"></i> Susana Rivera</p>
+							</div>
+							<a href="#" class="button float-right">See all</a>
+						</div> <!--#seminars-->
 					</div> <!--.eventSchedule-->
 				</div> <!--.container-->
 			</div> <!--.scheduleContent-->
@@ -165,10 +200,10 @@
 		<div class="counter parallax">
 			<div class="container">
 				<ul class="eventSummary clearfix">
-					<li><p class="number">6</p> Guest Speakers</li>
-					<li><p class="number">15</p> Workshops</li>
-					<li><p class="number">3</p> Days</li>
-					<li><p class="number">9</p> Conferences</li>
+					<li><p class="number">0</p> Guest Speakers</li>
+					<li><p class="number">0</p> Workshops</li>
+					<li><p class="number">0</p> Days</li>
+					<li><p class="number">0</p> Conferences</li>
 				</ul>
 			</div>
 		</div>
@@ -268,10 +303,10 @@
 			<h2>Time left:</h2>
 			<div class="countdown container">
 				<ul class="clearfix">
-					<li><p class="number">80</p> days</li>
-					<li><p class="number">15</p> hours</li>
-					<li><p class="number">5</p> minutes</li>
-					<li><p class="number">30</p> seconds</li>
+					<li><p id="days" class="number"></p> days</li>
+					<li><p id="hours" class="number"></p> hours</li>
+					<li><p id="minutes" class="number"></p> minutes</li>
+					<li><p id="seconds" class="number"></p> seconds</li>
 				</ul>
 			</div>
 		</section>
@@ -313,7 +348,16 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
 		<script src="js/plugins.js"></script>
+		<script src="js/jquery.animateNumber.min.js"></script>
+		<script src="js/jquery.countdown.min.js"></script>
+		<script src="js/jquery.lettering.js"></script>
+		<script src="js/lightbox.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
 		<script src="js/main.js"></script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2nqjyNwZu9hY0278wTDRbUqLLVrhGjWg&callback=initMap"
+    async defer></script>
+
 
 		<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 		<script>

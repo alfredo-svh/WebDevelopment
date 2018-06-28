@@ -212,6 +212,46 @@ ul{
 	float: right;
 }
 
+/* lettering */
+
+h1.siteName span{
+	position: relative;
+	text-shadow: 0 0 30px black;
+}
+
+@media only screen and (min-width: 992px){
+	.char1{
+		top: 20px; right: 20px;
+	}
+	.char2{
+		top: 0px; left: -20px;
+	}
+	.char3{
+		top: 10px; right: 20px;
+	}
+	.char4{
+		top: 5px; right: 10px;
+	}
+	.char5{
+		top: 15px; right: 10px;
+	}
+	.char6{
+		top: 5px; left: 10px;
+	}
+	.char7{
+		top: 20px; left: -10px;
+	}
+	.char8{
+		top: 0; left: 10px;
+	}
+	.char9{
+		top: 10px; right: 20px;
+	}
+	.char10{
+		top: 20px; right: 20px;
+	}
+}
+
 /* header*/
 
 div.hero{
@@ -222,7 +262,7 @@ div.hero{
 }
 
 div.contentHeader{
-	padding-top: 50px;
+	padding-top: 40px;
 }
 
 @media only screen and (min-width: 768px){
@@ -308,6 +348,14 @@ div.bar{
 	padding: 20px 0;
 }
 
+.fixed{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
 div.logo{
 	width: 80%;
 	float: left;
@@ -327,6 +375,7 @@ div.logo img{
 
 nav.mainNavigation{
 	display: none;
+	width: 100%;
 }
 
 nav.mainNavigation a{
@@ -340,6 +389,7 @@ nav.mainNavigation a{
 	display: block;
 	text-align: center;
 	margin-bottom: 20px;
+	clear: both;
 }
 
 nav.mainNavigation a:hover{
@@ -439,8 +489,6 @@ div.eventSchedule{
 
 nav.scheduleMenu{
 	width: 100%;
-	border-bottom: 1px solid #fe4918;
-	padding-bottom: 10px;
 }
 
 @media only screen and (min-width: 768px){
@@ -457,6 +505,24 @@ nav.scheduleMenu a{
 	font-family: 'Oswald', sans-serif;
 	margin-bottom: 10px;
 	font-size: 1.2em;
+	position: relative;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #fe4918;
+}
+
+nav.scheduleMenu a.active::after{
+	position: absolute;
+	content: '';
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	height: 20px;
+	width: 30px;
+	background-image: url('../img/talleres-flecha.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	bottom: -20px;
 }
 
 @media only screen and (min-width: 768px){
@@ -470,6 +536,10 @@ div.eventDetail p i{
 	color: #fe4918;
 	font-size: 1.6em;
 	margin-right: 10px;
+}
+
+div.hide{
+	display: none;
 }
 
 /* event detail */
@@ -516,7 +586,7 @@ div.speaker img{
 	max-width: 100%;
 	filter: gray;
 	-webkit-filter: grayscale(1);
-	-webkit-transition: all, .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
 }
 
 div.speaker img:hover{
@@ -710,6 +780,7 @@ blockquote p::before{
 
 footer.testimonialInfo{
 	padding: 0;
+	background-color: transparent;
 }
 
 footer.testimonialInfo img{
@@ -830,6 +901,155 @@ p.copyright{
 	padding: 10px 0;
 	margin: 20px 0 0 0;
 	text-align: center;
+}
+
+/* INTERNALS */
+/* conference */
+body.conference .mainNavigation .active{
+	border-bottom: 2px solid #fe4918;
+}
+
+div.gallery a{
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+/* register */
+form.register h3{
+	text-align: center;
+	text-transform: uppercase;
+	margin: 20px 0 0 0;
+}
+
+form.register label{
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+h4{
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 2px solid #fe4918;
+	padding-bottom: 10px;
+	font-size: 1.2em;
+}
+
+div.box{
+	background-color: white;
+	border: 1px solid #e1e1e1;
+	padding: 10px;
+	margin: 10px;
+}
+
+div.field{
+	padding: 20px;
+}
+
+@media only screen and (min-width: 768px){
+	div.field{
+		float: left;
+		width: 33.3%;
+	}
+}
+
+div.packets .priceTable:hover{
+	transform: none;
+	box-shadow: none;
+}
+
+div.packets .priceTable input{
+	clear: both;
+	width: 100px;
+	margin: 10px auto 0 auto;
+	display: block;
+}
+
+.dayContent{
+	padding: 20px;
+	display: none;
+}
+
+@media only screen and (min-width: 768px){
+	.dayContent > div{
+		float: left;
+		width: 33.3%;
+	}
+}
+
+
+
+.dayContent > div p{
+	text-align: left;
+}
+
+.dayContent > div label{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.dayContent > div input{
+	margin-right: 10px;
+}
+
+.dayContent >div label time{
+	color: #fe4918;
+	font-weight: bold;
+}
+
+/* register summary */
+
+div.summary p{
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+div.summary div.extras{
+	float: left;
+	width: 50%;
+	padding: 30px;
+}
+
+div.extras div.order{
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+div.extras div.order input{
+	margin: 10px 0 0 0;
+}
+
+div.summary div.total{
+	float: right;
+	width: 50%;
+	padding: 30px;
+}
+
+div.summary input{
+	display: block;
+	margin: 10px auto;
+}
+
+#productList{
+	background-color: #e1e1e1;
+	padding: 20px;
+	display: none;
+}
+
+#totalSum{
+	text-align: center;
+	font-size: 2em;
+	color: #fe4918;
+}
+
+input[disabled].button{
+	opacity: .5;
+}
+
+#error{
+	clear: both;
+	padding: 20px;
+	text-align: center;
+	display: none;
 }
 
 
