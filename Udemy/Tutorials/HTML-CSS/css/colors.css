@@ -1,0 +1,81 @@
+body{
+	background-color: gray;
+}
+
+img.logo{
+	opacity: .7;
+}
+
+.contenedor{
+	margin: 0 auto;
+	background-color: white;
+	width: 1000px;
+}
+
+nav{
+	background-color: rgb(53, 53, 53);
+	background-color: hsl(13,98%,55%);
+/*	opacity: .6; */
+	background-image: url(../images/html5.png);
+	background-repeat: no-repeat;
+}
+
+nav ul li a{
+	color: purple;
+}
+
+h2{
+	color: #fe4918;
+}
+
+div.gran-promocion{
+	background-color: rgb(161, 203, 255);
+}
+
+section#noticias{
+	background-color: rgb(242, 242, 242);
+}
+
+aside{
+	background-color: #a1cbff;
+}
+
+footer{
+	background-color: #353535;
+	color: #ffffff;
+}
+
+/* RGBA & HSLA */
+#noticias h2{
+	background-color: rgba(254,73,24, .57);
+	padding: 10px;
+	color: #ffffff;
+	border-bottom: 10px solid rgba(254,73,24, 1);
+}
+
+nav{
+	background-color: hsla(13, 98%, 55%, .5);
+}
+
+/* text shadow & box shadow */
+
+h2{
+	text-shadow: 10px 10px 10px rgba(254,73,24, 1);
+}
+
+ul#listado-cursos{
+	box-shadow: 2px 2px 10px 10px black;
+	box-shadow: 0px 20px 30px -20px rgba(0,0,0,.5);
+}
+
+/* gradient */
+#cursos{
+	background: linear-gradient(rgba(254,73,24, 1),#353535);
+	background: linear-gradient(to right, rgba(254,73,24, 1),#353535);
+	background: linear-gradient(to left, rgba(254,73,24, 1),#353535);
+	background: linear-gradient(to bottom, rgba(254,73,24, 1),#353535);
+	background: linear-gradient(to top, rgba(254,73,24, 1),#353535);
+	background: linear-gradient(-125deg, rgba(254,73,24, 1),#353535);
+	background: radial-gradient(rgba(254,73,24, 1),#353535);
+	background: radial-gradient(rgba(254,73,24, 1) 10%, #353535 20%);
+}
