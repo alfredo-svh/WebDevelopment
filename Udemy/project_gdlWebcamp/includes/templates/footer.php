@@ -83,7 +83,7 @@
 
 <script src="js/main.js"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2nqjyNwZu9hY0278wTDRbUqLLVrhGjWg&callback=initMap"
+<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
 async defer></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -92,4 +92,4 @@ async defer></script>
 	ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"cbd378f6c1657c227caa9a6bf","lid":"1af542e2a6"}) })</script>
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"","lid":""}) })</script>
