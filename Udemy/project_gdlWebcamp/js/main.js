@@ -1,4 +1,4 @@
-var api= 'AIzaSyB2nqjyNwZu9hY0278wTDRbUqLLVrhGjWg';
+var api= '';
 
 function initMap() {
 	var latLng = {
