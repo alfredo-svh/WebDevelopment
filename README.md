@@ -1,4 +1,4 @@
-# WebDevelopment
+# Web_Development
 
 
 Projects worked on during my full-stack web development internship (Summer 2018).
